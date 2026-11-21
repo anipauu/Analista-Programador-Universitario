@@ -1,0 +1,15 @@
+package ar.edu.unlp.info.oo1.Ejercicio30;
+
+import java.time.LocalDate;
+
+public class Internacional extends EnvioRapido {
+
+	public Internacional(LocalDate fechaDespacho, String origen, String destino, double peso,
+			boolean rapidoActivado) {
+		super(fechaDespacho, origen, destino, peso, rapidoActivado);
+	}
+
+	
+	
+	
+}

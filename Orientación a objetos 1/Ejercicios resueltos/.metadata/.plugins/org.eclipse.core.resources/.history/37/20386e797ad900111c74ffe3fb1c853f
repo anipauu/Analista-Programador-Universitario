@@ -1,0 +1,15 @@
+package ar.edu.unlp.info.oo1.Ejercicio28;
+
+public class MaterialDigital {
+	private String carpeta; 
+	private String nombreArchivo; 
+	private double tamañoEnMB; 
+	
+	protected double getTamañoEnMB() {
+		return this.tamañoEnMB; 
+	}
+	
+	protected String getNombreCarpeta() {
+		return this.carpeta; 
+	}
+}

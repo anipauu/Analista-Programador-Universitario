@@ -1,0 +1,19 @@
+package ar.edu.unlp.info.oo1.GreenHOOme;
+import java.time.LocalDate;
+import java.util.List; 
+import java.util.ArrayList; 
+
+public abstract class Orden {
+	private LocalDate fecha; 
+	private String domicilio; 
+	private List<Producto> productos; 
+	
+	
+	protected Orden(String domicilio) {
+		this.fecha = LocalDate.now(); 
+		this.domicilio = domicilio; 
+		this.productos = new ArrayLIst<Producto>(); 
+	}
+	
+	public abstract double calcularCosto();  
+}

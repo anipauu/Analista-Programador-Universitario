@@ -1,0 +1,16 @@
+package ar.edu.unlp.info.oo1.Ejercicio30;
+
+public class Persona extends Cliente{
+	private int dni; 
+	
+	public Persona(String direccion, String nombre, int dni) {
+		super(direccion, nombre);
+		this.dni = dni; 
+	}
+	
+	public double tieneDescuento() {
+		return 0.9; 
+	}
+	
+	
+}

@@ -1,0 +1,6 @@
+package ar.edu.unlp.info.oo1.Ejercicio30;
+
+public class Persona extends Cliente{
+	private int dni; 
+	
+}

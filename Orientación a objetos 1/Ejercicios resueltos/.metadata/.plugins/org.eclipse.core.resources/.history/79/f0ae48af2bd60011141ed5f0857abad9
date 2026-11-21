@@ -1,0 +1,20 @@
+package ar.edu.unlp.info.oo1.AlquilerDePropiedades;
+import java.time.LocalDate; 
+
+public class Reserva {
+	private IDateLapse periodo; 
+	private Usuario cliente; 
+	private Propiedad inmueble; 
+	
+	public Reserva (IDateLapse periodo, Usuario cliente, Propiedad propiedad) {
+		this.periodo = periodo; 
+		this.cliente = cliente; 
+		this.inmueble = propiedad; 
+	}
+	
+	
+	public int getCantNoches() {
+		return 
+	}
+	
+}

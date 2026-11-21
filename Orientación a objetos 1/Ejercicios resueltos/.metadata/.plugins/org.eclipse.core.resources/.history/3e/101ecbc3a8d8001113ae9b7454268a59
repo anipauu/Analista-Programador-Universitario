@@ -1,0 +1,10 @@
+package ar.edu.unlp.info.oo1.Ejercicio30;
+
+public class ClienteCorporativo extends Cliente{
+	private int cuit; 
+	
+	public ClienteCorporativo(String direccion, String nombre, int cuit) {
+		super(direccion, nombre);
+		this.cuit = cuit; 
+	}
+}

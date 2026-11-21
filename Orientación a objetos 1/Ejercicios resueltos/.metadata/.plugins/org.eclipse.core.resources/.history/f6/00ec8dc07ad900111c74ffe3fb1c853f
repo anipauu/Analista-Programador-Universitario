@@ -1,0 +1,12 @@
+package ar.edu.unlp.info.oo1.Ejercicio28;
+
+import java.time.LocalDate; 
+
+public abstract class Material {
+	public String titulo; 
+	public LocalDate fechaIncorporacion; 
+	
+	public int antiguedad() {
+		return LocalDate.now().minus(this.fechaIncorporacion); 
+	}
+}

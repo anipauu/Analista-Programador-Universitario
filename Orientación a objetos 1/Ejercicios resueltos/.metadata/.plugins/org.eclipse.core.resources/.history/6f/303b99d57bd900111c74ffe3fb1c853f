@@ -1,0 +1,8 @@
+package ar.edu.unlp.info.oo1.Ejercicio28;
+
+public class LibroImpreso extends Material{
+	private String autor; 
+	private String ubicacion; 
+	
+	
+}

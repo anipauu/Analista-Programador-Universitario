@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="/home/ani/Escritorio/Facultad/Orientación a objetos 1/oo1/IntervaloDeTiempo"/>
+			<item value="/home/ani/Escritorio/Facultad/Orientación a objetos 1/oo1/jobScheduler/src/main/java"/>
+			<item value="/home/ani/Escritorio/Facultad/Orientación a objetos 1/Tests catedra/mamiferos/test/java/ar/edu/unlp/info/oo1/mamiferos"/>
+			<item value="/home/ani/Escritorio/Facultad/Orientación a objetos 1/Tests catedra/ejercicioFigurasCuerpos"/>
+			<item value="/home/ani/Escritorio/Facultad/oo1/Tests catedra/ejercicio_presupuestos"/>
+			<item value="/home/ani/Escritorio/Facultad/ejercicio2"/>
+			<item value="/home/ani/Escritorio/Facultad/ejercicio1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardLocationPage">
+		<list key="location">
+			<item value="/home/ani/Escritorio/Facultad/Orientación a objetos 1/oo1/GreenHOOme"/>
+			<item value="/home/ani/Escritorio/Facultad/Orientación a objetos 1/oo1/GreenHOOme/src/test/java/ar/edu/unlp/info/oo1/GreenHOOme/OrdenCompraTest.java"/>
+			<item value="/home/ani/Escritorio/Facultad/Orientación a objetos 1/oo1/BalanzaMejorada"/>
+			<item value="/home/ani/Escritorio/Facultad/Orientación a objetos 1/oo1/FilteredSet"/>
+			<item value="/home/ani/Escritorio/Facultad/Orientación a objetos 1/oo1/GenealogiaSalvaje"/>
+			<item value="/home/ani/Escritorio/Facultad/oo1/BalanzaMejorada/src/main/java/ar/edu/unlp/info/oo1/BalanzaMejorada/Producto.java"/>
+			<item value="/home/ani/Escritorio/Facultad/oo1/Presupuesto"/>
+			<item value="/home/ani/Escritorio/Facultad/oo1"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArchetypePage">
+		<item key="catalog" value="All Catalogs"/>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
+	<section name="Maven2ProjectWizardArchifactPage">
+		<list key="package">
+			<item value="ar.edu.unlp.info.oo1.Ejercicio28"/>
+			<item value="ar.edu.unlp.info.oo1.Ejercicio30"/>
+			<item value="ar.edu.unlp.info.oo1.ServiciosTuristicos"/>
+			<item value="ar.edu.unlp.info.oo1.GreenHOOme"/>
+			<item value="ar.edu.unlp.info.oo1.AlquilerDePropiedades"/>
+			<item value="ar.edu.unlp.info.oo1.FilteredSet"/>
+			<item value="ar.edu.unlp.info.oo1.IntervaloDeTiempo"/>
+			<item value="ar.edu.unlp.info.oo1.ClienteDeCorreo"/>
+			<item value="ar.edu.unlp.info.oo1.jobScheduler"/>
+			<item value="ar.edu.unlp.info.oo1.TiposYBindingDinamico"/>
+			<item value="ar.edu.unlp.info.oo1.RedDeAlumbrado"/>
+			<item value="ar.edu.unlp.info.oo1.GenealogiaSalvaje"/>
+			<item value="ar.edu.unlp.info.oo1.figurasYCuerpos"/>
+			<item value="ar.edu.unlp.info.oo1.BalanzaMejorada"/>
+			<item value="ar.edu.unlp.info.oo1.Presupuesto"/>
+		</list>
+		<list key="groupId">
+			<item value="ar.edu.unlp.info.oo1"/>
+		</list>
+		<list key="artifactId">
+			<item value="Ejercicio28"/>
+			<item value="Ejercicio30"/>
+			<item value="ServiciosTuristicos"/>
+			<item value="GreenHOOme"/>
+			<item value="AlquilerDePropiedades"/>
+			<item value="FilteredSet"/>
+			<item value="IntervaloDeTiempo"/>
+			<item value="ClienteDeCorreo"/>
+			<item value="jobScheduler"/>
+			<item value="TiposYBindingDinamico"/>
+			<item value="RedDeAlumbrado"/>
+			<item value="GenealogiaSalvaje"/>
+			<item value="figurasYCuerpos"/>
+			<item value="BalanzaMejorada"/>
+			<item value="Presupuesto"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="MavenProjectWizardArtifactPage">
+		<list key="groupId">
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.wizards.CustomArchetypeDialog">
+		<list key="archetypeGroupId">
+			<item value="io.github.unlp-oo"/>
+		</list>
+		<list key="archetypeArtifactId">
+			<item value="archetype"/>
+		</list>
+		<list key="archetypeVersion">
+			<item value="1.0.0"/>
+		</list>
+		<list key="repositoryUrl">
+			<item value=""/>
+		</list>
+	</section>
+</section>

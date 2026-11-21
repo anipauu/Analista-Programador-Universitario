@@ -1,0 +1,27 @@
+package ar.edu.unlp.info.oo1.Ejercicio16;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.BeforeEach; 
+
+class CilindroTest {
+
+	private Cilindro cilindro; 
+	
+	@BeforeEach
+	void setUp(){
+		cilindro = new Cilindro("Hierro", "Azul", 2, 4); 
+	}
+	
+	@Test
+	void testVolumen() { 
+		assertEquals(Math.PI * 16, cilindro.volumen());
+	}
+	
+	@Test 
+	void testSuperficie() {
+		assertEquals(2 * Math.PI * 2 * 4 + 2 * Math.PI * 4, cilindro.superficie());
+	}
+	
+
+}

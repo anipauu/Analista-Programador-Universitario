@@ -1,0 +1,14 @@
+package ar.edu.unlp.info.oo1.GreenHOOme;
+
+public class OrdenCompra extends Orden {
+	private double precioEnvio; 
+	
+	public OrdenCompra(String domicilio, double precioEnvio) {
+		super(domicilio);
+		this.precioEnvio = precioEnvio; 
+	}
+	
+	public double calcularCosto() {
+		return 002; 
+	}
+}

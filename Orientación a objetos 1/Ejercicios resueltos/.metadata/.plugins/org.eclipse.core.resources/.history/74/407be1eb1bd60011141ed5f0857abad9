@@ -1,0 +1,31 @@
+package ar.edu.unlp.info.oo1.AlquilerDePropiedades;
+
+import java.util.List;
+import java.time.LocalDate;
+import java.util.ArrayList; 
+
+public class Usuario {
+	private String nombre; 
+	private String direccion; 
+	private int dni; 
+	private List<Reserva> reservas; 
+	private List<Propiedad> propiedades; 
+
+	public Usuario(String nombre, String direccion, int dni) {
+		this.nombre = nombre; 
+		this.direccion = direccion; 
+		this.dni = dni; 
+		this.reservas = new ArrayList<Reserva>();
+		this.propiedades = new ArrayList<Propiedad>(); 
+	}
+	
+	public Reserva crearReserva(IDateLapse periodo, Propiedad propiedad) {
+		if (propiedad.estaDisponible(periodo)) {
+			Reserva reserva = new Reserva(periodo, this);
+			this.reservas.add(reserva); 
+			return reserva; 
+		}
+		return null; 
+	}
+	
+}

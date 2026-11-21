@@ -1,0 +1,20 @@
+package ar.edu.unlp.info.oo1.GreenHOOme;
+
+import java.util.List; 
+
+public class Usuario {
+	private String nombreCompleto; 
+	private String domicilio; 
+	private List<Orden> ordenes; 
+	
+	
+	public void agregarOrden(Orden orden) {
+		this.ordenes.add(orden);
+	}
+	
+	public List<Orden> devolverOrden(){
+		return this.ordenes; 
+	}
+	
+	
+}

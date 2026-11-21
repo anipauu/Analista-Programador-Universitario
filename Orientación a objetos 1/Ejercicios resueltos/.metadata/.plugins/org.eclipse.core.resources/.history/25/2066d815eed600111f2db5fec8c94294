@@ -1,0 +1,25 @@
+package ar.edu.unlp.info.oo1.GreenHOOme;
+import java.util.List;
+import java.util.ArrayList;
+
+public class OrdenServicio extends Orden{
+	private String descripcion; 
+	private int horas; 
+	private List<Tecnico> tecnicos; 
+	
+	public OrdenServicio(String domicilio, String descripcion, int horas) {
+		super(domicilio);
+		this.descripcion = descripcion; 
+		thishoras = horas;
+		this.tecnicos = new ArrayList<Tecnico>(); 
+	}
+	
+	public double calcularCosto() {
+		return this.productos.stream()
+				.mapToDouble(producto -> producto.getCosto())
+				.sum() + (
+				this.tecnicos.stream()
+				.mapToDouble(tecnico -> tecnico.getValorHora())
+				.sum() * this.horas); 
+	}
+}

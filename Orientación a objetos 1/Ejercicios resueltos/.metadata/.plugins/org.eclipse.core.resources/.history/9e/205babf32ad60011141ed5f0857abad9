@@ -1,0 +1,8 @@
+package ar.edu.unlp.info.oo1.AlquilerDePropiedades;
+import java.util.Date;
+
+public class Reserva {
+	private Date fechaInicio; 
+	private Date fechaFin; 
+	
+}

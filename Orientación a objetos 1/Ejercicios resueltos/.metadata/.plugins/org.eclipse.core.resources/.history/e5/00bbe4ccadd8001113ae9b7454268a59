@@ -1,0 +1,20 @@
+package ar.edu.unlp.info.oo1.Ejercicio30;
+import java.time.LocalDate;
+
+public abstract class Envio {
+	private LocalDate fechaDespacho; 
+	private String origen; 
+	private String destino; 
+	private double precio; 
+	
+	public Envio(LocalDate fechaDespacho, String origen, String destino, double precio) {
+		this.fechaDespacho = fechaDespacho; 
+		this.origen = origen; 
+		this.destino = destino; 
+		this.precio = precio; 
+	}
+	
+	public boolean fechaDespachoEntre(LocalDate fechaInicio, LocalDate fechaFin) {
+		return !fechaInicio.isAfter(this.fechaDespacho) && !fechaFin.isBefore(this.fechaDespacho); 
+	}
+}

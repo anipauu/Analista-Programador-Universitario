@@ -1,0 +1,19 @@
+package ar.edu.unlp.info.oo1.Ejercicio28;
+
+import java.time.LocalDate;
+
+public class RevistaDigital extends MaterialDigital implements Descargable{
+	private int numero;
+
+	public RevistaDigital(String titulo, LocalDate fechaIncorporacion, String carpeta, String nombreArchivo,
+			double tamañoEnMB, int numero) {
+		super(titulo, fechaIncorporacion, carpeta, nombreArchivo, tamañoEnMB);
+		this.numero = numero;
+	} 
+	
+	public double tamañoEnMB() {
+		return this.getTamañoEnMB(); 
+	}
+	
+	
+}

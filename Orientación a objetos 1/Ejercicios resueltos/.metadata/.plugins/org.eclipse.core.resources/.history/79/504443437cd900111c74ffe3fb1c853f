@@ -1,0 +1,17 @@
+package ar.edu.unlp.info.oo1.Ejercicio28;
+
+import java.time.LocalDate;
+
+public class LibroDigital extends MaterialDigital implements Descargable{
+	private String autor;
+
+	public LibroDigital(String titulo, LocalDate fechaIncorporacion, String carpeta, String nombreArchivo,
+			double tamañoEnMB, String autor) {
+		super(titulo, fechaIncorporacion, carpeta, nombreArchivo, tamañoEnMB);
+		this.autor = autor;
+	} 
+	
+	
+	
+	
+}

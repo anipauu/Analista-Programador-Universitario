@@ -1,0 +1,14 @@
+package ar.edu.unlp.info.oo1.Ejercicio30;
+
+import java.util.List; 
+
+public abstract class Cliente {
+	private String direccion; 
+	private String nombre; 
+	private List<Envio> envios; 
+	
+	public Cliente(String direccion, String nombre) {
+		this.direccion = direccion; 
+		this.nombre = nombre; 
+	}
+}

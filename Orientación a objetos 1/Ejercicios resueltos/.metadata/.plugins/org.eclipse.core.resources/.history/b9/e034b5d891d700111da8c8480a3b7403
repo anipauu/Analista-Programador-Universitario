@@ -1,0 +1,19 @@
+package ar.edu.unlp.info.oo1.ServiciosTuristicos;
+
+import java.time.LocalDate;
+
+public class Estadia extends Servicio{
+	private String destino; 
+	private int cantidadPersonas; 
+	
+	public Estadia(LocalDate fechaInicio, LocalDate fechaFin, double costoPorDia, String destino, int cantidadPersonas) {
+		super(fechaInicio, fechaFin, costoPorDia);
+		this.destino = destino; 
+		this.cantidadPersonas = cantidadPersonas; 
+	}
+	
+	public double calcularCosto() {
+		return this.calcularCosto() * cantidadPersonas; 
+	}
+	
+}

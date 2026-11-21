@@ -1,0 +1,21 @@
+package ar.edu.unlp.info.oo1.Ejercicio30;
+
+import java.time.LocalDate;
+
+public abstract class EnvioRapido extends Envio {
+	private boolean rapidoActivado;
+
+	public EnvioRapido(LocalDate fechaDespacho, String origen, String destino, double peso, boolean rapidoActivado) {
+		super(fechaDespacho, origen, destino, peso);
+		this.rapidoActivado = rapidoActivado;
+	} 
+	
+	public boolean getRapidoActivado() {
+		return this.rapidoActivado; 
+	}
+	
+	public double costoAdicional() {
+		if (this.rapidoActivado) return this.getCostoAdicional(); 
+	}
+
+}

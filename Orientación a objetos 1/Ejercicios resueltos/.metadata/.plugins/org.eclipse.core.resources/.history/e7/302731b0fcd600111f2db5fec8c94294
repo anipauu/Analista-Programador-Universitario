@@ -1,0 +1,35 @@
+package ar.edu.unlp.info.oo1.GreenHOOme;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class OrdenServicioTest {
+
+	private OrdenServicio ordenSinDescuento;
+	private OrdenServicio ordenConDescuento; 
+	
+	/* Particiones equiv: con descuento y sin descuento
+	Sin descuento: De 0 a 10 horas 
+	Con descuento horas > 10*/
+	
+	@BeforeEach
+	void setUp() {
+
+		Tecnico tecnica = new Tecnico("Lucía Iraola", "Instalaciones solres", 4500);
+		Producto calefon = new Producto("Calefón solar", "Ecologico", 50000, false);
+		ordenSinDescuento = new OrdenServicio("Larrea 5800, Mar del Plata", "instalación de calefón solar", 10); 
+		ordenConDescuento = new OrdenServicio("Larrea 5800, Mar del Plata", "instalación de calefón solar", 11);
+		ordenSinDescuento.agregarProducto(calefon);
+		ordenSinDescuento.agregarTecnico(tecnica);
+		ordenConDescuento.agregarProducto(calefon);
+		ordenSinDescuento.agregarTecnico(tecnica);
+	}
+	
+	@Test
+	void testCostoTotalSinDescuento(){
+		assertEquals(95000, ordenSinDescuento.calcularCosto());
+	}
+
+}

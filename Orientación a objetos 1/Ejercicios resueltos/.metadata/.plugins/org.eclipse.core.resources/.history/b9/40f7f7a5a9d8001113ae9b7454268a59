@@ -1,0 +1,10 @@
+package ar.edu.unlp.info.oo1.Ejercicio30;
+
+public abstract class EnvioRapido extends Envio {
+	private boolean rapidoActivado; 
+	
+	public EnvioRapido() {
+		
+	}
+
+}

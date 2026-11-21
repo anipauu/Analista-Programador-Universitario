@@ -1,0 +1,8 @@
+package ar.edu.unlp.info.oo1.GreenHOOme;
+
+public class Tecnico {
+	private String nombreCompleto; 
+	private String especialidad; 
+	private double valorHora; 
+	
+}

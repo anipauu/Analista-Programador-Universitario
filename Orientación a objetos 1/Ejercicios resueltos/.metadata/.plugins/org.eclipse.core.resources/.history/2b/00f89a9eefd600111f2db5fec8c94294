@@ -1,0 +1,10 @@
+package ar.edu.unlp.info.oo1.GreenHOOme;
+
+public class intanciando {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,40 @@
+package ar.edu.unlp.info.oo1.FilteredSet;
+import java.util.Collection; 
+import java.util.Set; 
+import java.util.Set; 
+import java.util.HashSet; 
+
+public class EvenNumberSetDelegacion implements Set<Integer>{
+	private HashSet<Integer> setInterno = new HashSet<>(); 
+	
+	@Override
+	public boolean add(Integer numero) {
+		if (numero == null || numero % 2 != 0) {
+			return false; 
+		}
+		return setInterno.add(numero); 
+	}
+	
+	@Override 
+	public boolean addAll(Colection <? extends Integer> c) {
+		boolean seAgrego = false; 
+		for (Integer n : c) {
+			if (this.add(n)) {
+				seAgrego = true; 
+			}
+		}
+		return seAgrego; 
+	} 
+	
+	@Override public int size() { return setInterno.size(); }
+    @Override public boolean isEmpty() { return setInterno.isEmpty(); }
+    @Override public boolean contains(Object o) { return setInterno.contains(o); }
+    @Override public Iterator<Integer> iterator() { return setInterno.iterator(); }
+    @Override public Object[] toArray() { return setInterno.toArray(); }
+    @Override public <T> T[] toArray(T[] a) { return setInterno.toArray(a); }
+    @Override public boolean remove(Object o) { return setInterno.remove(o); }
+    @Override public boolean containsAll(Collection<?> c) { return setInterno.containsAll(c); }
+    @Override public boolean retainAll(Collection<?> c) { return setInterno.retainAll(c); }
+    @Override public boolean removeAll(Collection<?> c) { return setInterno.removeAll(c); }
+    @Override public void clear() { setInterno.clear(); }
+}

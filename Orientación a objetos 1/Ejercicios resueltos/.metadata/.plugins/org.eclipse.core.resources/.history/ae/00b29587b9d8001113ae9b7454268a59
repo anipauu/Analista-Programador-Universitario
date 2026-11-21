@@ -1,0 +1,24 @@
+package ar.edu.unlp.info.oo1.Ejercicio30;
+
+import java.time.LocalDate;
+
+public class Internacional extends EnvioRapido {
+
+	public Internacional(LocalDate fechaDespacho, String origen, String destino, double peso,
+			boolean rapidoActivado) {
+		super(fechaDespacho, origen, destino, peso, rapidoActivado);
+	}
+
+	public double getCostoAdicional() {
+		return this.getRapidoActivado() ? 800 : 0;  
+	}
+	
+	public double calcularPrecioEnGramos() {
+		if (this.getPeso() <= 1000 ) return 10; 
+		return 12; 
+	}
+	
+	public double costo() {
+		return 5000 + (this.calcularPrecioEnGramos() * this.getPeso() + this.getCostoAdicional());  
+	}	
+}

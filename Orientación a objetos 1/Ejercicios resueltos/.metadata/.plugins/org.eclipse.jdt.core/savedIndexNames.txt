@@ -1,0 +1,20 @@
+INDEX VERSION 1.134+/home/ani/Escritorio/Facultad/Orientación a objetos 1/oo1/.metadata/.plugins/org.eclipse.jdt.core
+3876115470.index
+1865797976.index
+1843761293.index
+336303499.index
+3419963109.index
+2450690019.index
+3479065148.index
+2678723490.index
+831694264.index
+2278995100.index
+571757323.index
+1818932166.index
+3068053066.index
+1871761282.index
+1255184772.index
+3820143448.index
+1077498058.index
+63646968.index
+1475744840.index

@@ -1,0 +1,44 @@
+package ar.edu.unlp.info.oo1.AlquilerDePropiedades;
+import java.time.LocalDate; 
+import java.util.List; 
+import java.util.ArrayList; 
+public class Propiedad {
+	private String direccion; 
+	private String nombre; 
+	private double precioPorNoche; 
+	private List<Reserva> reservas; 
+	
+	public Propiedad(String direccion, String nombre, double precio) {
+		this.direccion = direccion; 
+		this.nombre = nombre; 
+		this.precioPorNoche = precio; 
+		this.reservas = new ArrayList<Reserva>(); 
+	}
+	
+	public void agregarReserva(Reserva reserva) {
+		this.reservas.add(reserva); 
+	}
+	
+	public void eliminarReserva(Reserva reserva) {
+		this.reservas.remove(reserva); 
+	}
+	
+	public double getPrecioPorNoche() {
+		return this.precioPorNoche; 
+	}
+	
+	public boolean estaDisponible(IDateLapse periodo) {
+		return this.reservas.stream()
+				.noneMatch(reserva -> reserva.getPeriodo().overlaps(periodo)); 
+	}
+	
+	public double sumarTotalReserva(IDateLapse periodo) {
+		return reservas.stream()
+				.filter(reserva -> reserva.getPeriodo().overlaps(periodo))
+				.mapToDouble(reserva -> reserva.getPrecio())
+				.sum(); 
+	}
+	
+	
+		
+}

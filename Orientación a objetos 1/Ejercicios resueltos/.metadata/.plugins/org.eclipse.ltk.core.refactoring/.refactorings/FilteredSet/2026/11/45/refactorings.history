@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;ar.edu.unlp.info.oo1.FilteredSet.EvenNumberSet&apos; to &apos;EvenNumberSetHerencia&apos;&#x0A;- Original project: &apos;FilteredSet&apos;&#x0A;- Original element: &apos;ar.edu.unlp.info.oo1.FilteredSet.EvenNumberSet&apos;&#x0A;- Renamed element: &apos;ar.edu.unlp.info.oo1.FilteredSet.EvenNumberSetHerencia&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;EvenNumberSet&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;ar.edu.unlp.info.oo1.FilteredSet{EvenNumberSet.java[EvenNumberSet" matchStrategy="1" name="EvenNumberSetHerencia" qualified="false" references="true" similarDeclarations="false" stamp="1793723557864" textual="false" version="1.0"/>
+</session>

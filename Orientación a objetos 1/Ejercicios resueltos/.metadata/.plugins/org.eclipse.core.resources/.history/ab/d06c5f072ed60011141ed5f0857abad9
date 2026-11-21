@@ -1,0 +1,26 @@
+package ar.edu.unlp.info.oo1.AlquilerDePropiedades;
+import java.time.LocalDate; 
+import java.util.List; 
+public class Propiedad {
+	private String direccion; 
+	private String nombre; 
+	private double precioPorNoche; 
+	private List<Reserva> reservas; 
+	
+	public Propiedad(String direccion, String nombre, double precio) {
+		this.direccion = direccion; 
+		this.nombre = nombre; 
+		this.precioPorNoche = precio; 
+	}
+	
+	public double getPrecioPorNoche() {
+		return this.precioPorNoche; 
+	}
+	
+	public boolean estaDisponible(LocalDate from, LocalDate to) {
+		IDateLapse date = new DateLapse(from, to);
+		return this.reservas.stream()
+				.noneMatch(reserva -> reserva.getPeriodo().overlaps(date)); 
+	}
+		
+}

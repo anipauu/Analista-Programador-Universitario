@@ -1,0 +1,28 @@
+package ar.edu.unlp.info.oo1.GreenHOOme;
+
+public class intanciando {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Usuario usuario = new Usuario("Juan Martinez", "Larrea 5800, Mar del Plata");
+		
+		Producto panelSolar = new Producto("Panel Solar", "Ecologico", 35000, false);
+		Producto compostera  = new Producto ("Compostera", "Ecologico", 8000, true); 
+		
+		Orden ordenCompra = new OrdenCompra("Larrea 5800, Mar del Plata", 5000);
+		ordenCompra.agregarProducto(panelSolar);
+		ordenCompra.agregarProducto(compostera);
+		
+		Tecnico tecnica = new Tecnico("Lucía Iraola", "Instalaciones solres", 4500);
+		Producto calefon = new Producto("Calefón solar", "Ecologico", 50000, false);
+		
+		OrdenServicio ordenServicio = new OrdenServicio("Larrea 5800, Mar del Plata", "instalación de calefón solar", 5); 
+		ordenServicio.agregarProducto(calefon);
+		ordenServicio.agregarTecnico(tecnica);
+		
+		System.out.println("Precio total orden de compra --> " + ordenCompra.calcularCosto());
+		System.out.println("Precio total orden servicio -> " + ordenServicio.calcularCosto());
+		
+	}
+
+}

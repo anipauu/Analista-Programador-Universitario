@@ -1,0 +1,16 @@
+package ar.edu.unlp.info.oo1.GreenHOOme;
+
+public class OrdenServicio extends Orden{
+	private String descripcion; 
+	private int horas; 
+	
+	public OrdenServicio(String domicilio, String descripcion, int horas) {
+		super(domicilio);
+		this.descripcion = descripcion; 
+		this.horas = horas; 
+	}
+	
+	public double calcularCosto() {
+		return 001; 
+	}
+}

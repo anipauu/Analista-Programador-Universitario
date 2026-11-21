@@ -1,0 +1,14 @@
+package ar.edu.unlp.info.oo1.AlquilerDePropiedades;
+
+import java.util.List;
+import java.util.ArrayList; 
+
+public class Usuario {
+	private String nombre; 
+	private String direccion; 
+	private int dni; 
+	private List<Reserva> reservas; 
+	private List<Propiedad> propiedades; 
+
+	
+}

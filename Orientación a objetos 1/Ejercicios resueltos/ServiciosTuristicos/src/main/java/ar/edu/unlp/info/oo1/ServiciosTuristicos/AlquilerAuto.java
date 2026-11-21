@@ -1,0 +1,23 @@
+package ar.edu.unlp.info.oo1.ServiciosTuristicos;
+
+import java.time.LocalDate;
+
+public class AlquilerAuto extends Servicio{
+	private double costoPorKm; 
+	private double kilometrosRecorridos; 
+	private String tipoVehiculo; 
+	private double costoDiarioSeguro; 
+	
+	
+	public AlquilerAuto(LocalDate fechaInicio, LocalDate fechaFin, double costoDiarioSeguro, double costoPorKm, double kilometrosRecorridos, String tipoVehiculo) {
+		super(fechaInicio, fechaFin); 
+		this.costoDiarioSeguro = costoDiarioSeguro; 
+		this.costoPorKm = costoPorKm; 
+		this.kilometrosRecorridos = kilometrosRecorridos; 
+		this.tipoVehiculo = tipoVehiculo;  
+	}
+	
+	public double calcularCosto() {
+		return (this.costoPorKm * this.kilometrosRecorridos) + (this.cantidadDeDias() * this.costoDiarioSeguro); 
+	}
+}

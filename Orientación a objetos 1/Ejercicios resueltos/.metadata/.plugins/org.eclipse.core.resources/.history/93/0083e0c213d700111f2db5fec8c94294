@@ -1,0 +1,17 @@
+package ar.edu.unlp.info.oo1.ServiciosTuristicos;
+
+import java.time.LocalDate;
+import java.time.temporal.ChronoUnit;
+
+public abstract class Servicio {
+	private LocalDate fechaInicio; 
+	private LocalDate fechaFin; 
+	private double costoPorDia; 
+	
+	
+	
+	protected double calcularCosto() {
+		long dias = ChronoUnit.DAYS.between(fechaInicio, fechaFin); 
+		return dias * costoPorDia; 
+	}
+}
